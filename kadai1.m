@@ -1,35 +1,35 @@
-% ‰Û‘è‚P@•W–{‰»ŠÔŠu‚Æ‹óŠÔ‰ğ‘œ“x
-% ‰æ‘œ‚ğƒ_ƒEƒ“ƒTƒ“ƒvƒŠƒ“ƒO‚µ‚Äi•W–{‰»ŠÔŠu‚ğ‘å‚«‚­‚µ‚Äj
-% •\¦‚¹‚æD
-% ‰º‹L‚ÍƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚Å‚ ‚éD
-% ‰Û‘èì¬‚É‚ ‚½‚Á‚Ä‚ÍuLennavˆÈŠO‚Ì‰æ‘œ‚ğ—p‚¢‚æD
+clear; % å¤‰æ•°ã®ã‚ªãƒ¼ãƒ«ã‚¯ãƒªã‚¢
 
-clear; % •Ï”‚ÌƒI[ƒ‹ƒNƒŠƒA
+ORG=imread('Lenna.png'); % åŸç”»åƒã®å…¥åŠ›
+imagesc(ORG); axis image; % ç”»åƒã®è¡¨ç¤º
+title('åŸç”»åƒ')
+pause; % ä¸€æ™‚åœæ­¢
 
-ORG=imread('Lenna.png'); % Œ´‰æ‘œ‚Ì“ü—Í
-imagesc(ORG); axis image; % ‰æ‘œ‚Ì•\¦
-pause; % ˆê’â~
+IMG = imresize(ORG,0.5); % ç”»åƒã®ç¸®å°(1/2)
+IMG2 = imresize(IMG,2,'box'); % ç”»åƒã®æ‹¡å¤§
+imagesc(IMG2); axis image; % ç”»åƒã®è¡¨ç¤º
+title('1/2ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°')
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = imresize(ORG,0.5); % ‰æ‘œ‚Ìk¬
-IMG2 = imresize(IMG,2,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
-pause; % ˆê’â~
+IMG = imresize(IMG,0.5); % ç”»åƒã®ç¸®å°(1/4)
+IMG2 = imresize(IMG,4,'box'); % ç”»åƒã®æ‹¡å¤§
+imagesc(IMG2); axis image; % ç”»åƒã®è¡¨ç¤º
+title('1/4ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°')
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
-IMG2 = imresize(IMG,4,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
-pause; % ˆê’â~
+IMG = imresize(IMG,0.5); % ç”»åƒã®ç¸®å°(1/8)
+IMG2 = imresize(IMG,8,'box'); % ç”»åƒã®æ‹¡å¤§
+imagesc(IMG2); axis image; % ç”»åƒã®è¡¨ç¤º
+title('1/8ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°')
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
-IMG2 = imresize(IMG,8,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
-pause; % ˆê’â~
+IMG = imresize(IMG,0.5); % ç”»åƒã®ç¸®å°(1/16)
+IMG2 = imresize(IMG,16,'box'); % ç”»åƒã®æ‹¡å¤§
+imagesc(IMG2); axis image; % ç”»åƒã®è¡¨ç¤º
+title('1/16ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°')
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
-IMG2 = imresize(IMG,16,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
-pause; % ˆê’â~
-
-IMG = imresize(IMG,0.5); % ‰æ‘œ‚Ìk¬
-IMG2 = imresize(IMG,32,'box'); % ‰æ‘œ‚ÌŠg‘å
-imagesc(IMG2); axis image; % ‰æ‘œ‚Ì•\¦
+IMG = imresize(IMG,0.5); % ç”»åƒã®ç¸®å°(1/32)
+IMG2 = imresize(IMG,32,'box'); % ç”»åƒã®æ‹¡å¤§
+imagesc(IMG2); axis image; % ç”»åƒã®è¡¨ç¤º
+title('1/32ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°')
