@@ -1,6 +1,6 @@
 clear; % 変数のオールクリア
 
-ORG = imread('Lenna.jpg'); % 画像の読み込み
+ORG = imread('pic1.jpg'); % 画像の読み込み
 ORG = rgb2gray(ORG); % 白黒濃淡画像に変換
 imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 title('白黒濃淡画像')
