@@ -1,6 +1,6 @@
 clear; % 変数のオールクリア
 
-ORG=imread('Lenna.png'); % 原画像の入力
+ORG=imread('pic1.jpg'); % 原画像の入力
 ORG = rgb2gray(ORG); %グレースケール
 imagesc(ORG); colormap(gray); colorbar; axis image; % 画像の表示
 title('原画像')
