@@ -2,11 +2,11 @@
 
 「」を原画像とする．この画像は縦画素x，横画素yのディジタルカラー画像である．
 
-	ORG=imread('Lenna.png'); % 原画像の入力
+	ORG=imread('pic1.jpg'); % 原画像の入力
 	imagesc(ORG); axis image; % 画像の表示
 
 で画像を読み込み，縦横軸と共に原画像の表示を行う．表示した画像を図1に示す．  
-![原画像]()  
+![原画像](picture/r01_1.jpg)  
 図1．原画像
 
 	IMG = imresize(ORG,0.5); % 画像の縮小(1/2)
